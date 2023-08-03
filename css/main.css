@@ -1,0 +1,38 @@
+.bg-item {
+    background: #2c2c2c;
+}
+
+.tamanho {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.secao-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+main img {
+    border-radius: 4px;
+}
+
+
+.bg-produtos{
+    background-image: radial-gradient(#ffffff, #c7c7c7c7);
+}
+
+.produtos-titulo{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: #e21 solid 4px;
+    max-width: fit-content;
+}
+
+.produtos-lista{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}

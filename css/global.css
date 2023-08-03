@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'roboto'
+}
+
+
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
