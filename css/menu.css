@@ -1,4 +1,4 @@
-.bg{
+.bg {
     background-color: #2c2c2c;
     width: 100%;
     position: sticky;
@@ -7,69 +7,108 @@
     box-shadow: 1px 1px 1px #000000;
 }
 
-.header{
+.header {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.logo span{
+.logo span {
     color: #e21;
 }
 
-.logo{
+.logo {
     font-family: 'Roboto';
     font-weight: bold;
     color: #ffffff;
     font-size: 2rem;
 }
 
-.menu-item{
+.menu-item {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.menu-item a{
+.menu-item a {
     text-transform: uppercase;
     font-weight: 400;
     color: #ffffff;
     border-bottom: transparent solid 2px;
-
     color: #c7c7c7;
 }
 
-.menu-item a:hover{
+.menu-item a:hover {
     border-bottom: #e21 solid 4px;
     padding-bottom: 24px;
 }
 
-.botoes-direito{
+.botoes-direito {
     display: flex;
     gap: 10px;
-}
-.botoes-direito a{
-    width: 30px;
     color: #ffffff;
 }
 
-
-@media(min-width:800px){
-    .botoes-direito a:last-child{
-        display: none;
-    }
+.botoes-direito button{
+    width: 30px;
+    color: #ffffff;
+    display: none;
 }
 
-@media(max-width:800px){
+
+
+.botao-menu{
+    display: none;
+    background: none;
+    color: #ffffff;
+    border: none;
+}
+
+@media(max-width:800px) {
+    .menu {
+        position: absolute;
+        background: #2c2c2c;
+        top: 50px;
+        right:0px;
+        border-radius: 4px;
+        height: max-content;
+        z-index: 9999;
+        padding: 0 50px;
+    }
+
+    .botoes-direito button{
+        display: block;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
     .menu{
         display: none;
     }
-    .logo{
-        font-size: 1.5rem;
+    .js-menu.ativo {
+        display: block;
     }
 
+
+    .menu-item a:hover {
+        border-bottom: 1px solid #e21;
+        margin: 0 1rem;
+        padding: 1rem 0;
+    }
+
+    .menu-item a {
+        display: flex;
+        border-bottom: 1px solid #e21;
+        margin: 0 1rem;
+        padding: 1rem 0;
+    }
 }
